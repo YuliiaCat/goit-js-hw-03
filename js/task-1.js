@@ -1,9 +1,9 @@
 'use strict';
 
 function slugify(title) {
-  let slug = title.slice(" ").join("-");
+  let slug = title.split(" ").join("-");
 
-  return slug.toLowerCase()
+  return slug.toLowerCase();
 }
 
 console.log(slugify("Arrays for begginers")); // "arrays-for-begginers"
